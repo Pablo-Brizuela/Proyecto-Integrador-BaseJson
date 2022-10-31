@@ -1,0 +1,630 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+}
+
+ .container-login{
+    min-height: 600px;
+ }
+
+header {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: black;
+    /* border: solid 5px #09735F; */
+    /* border-radius: 5px; */
+}
+
+
+header a{
+    text-decoration: none;
+}
+header .navegador {
+    display: none;
+}
+
+ .user-panel {
+    display: none;
+}
+
+input {
+    width: 85%;
+    padding: 10px;
+    align-self: center;
+    border: solid 1px black;
+    border-radius: 5px;
+}
+
+header ul li {
+    display: flex;
+    flex-direction: column;
+    margin: 3px;
+    /* min-width: 35%; */
+    color:white
+}
+
+header ul li a {
+    padding: 5px;
+    align-self: center;
+    color:white
+}
+
+header ul li i {
+    align-self: center;
+}
+
+.top-header {
+    text-align: center;
+}
+
+
+.navegador {
+    order: 1;
+    min-width: 90%;
+  
+}
+
+header ul {
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* justify-content: space-evenly; */
+    list-style: none;
+    margin: 5px;
+    align-items: baseline;
+}
+
+.navegador ul li {
+    margin: 5px;
+}
+
+.logo {
+    max-width: 200px;
+    
+    
+}
+
+
+header button {
+    align-self: center;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 7px;
+}
+
+.logo-footer {
+    max-width: 20vw;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    margin-top: 5px;
+    /* border-top: solid 1px black; */
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    color: white;
+    background-color: black ;
+}
+
+footer ul {
+    margin: 4px;
+    list-style: none;
+    font-style: italic;
+}
+
+footer a{
+    text-decoration: none;
+    color: grey;
+}
+
+footer h4{
+    color:#68478D;
+}
+
+footer .social-foot {
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+    padding: 0% 30%;
+    gap: 5px;
+}
+
+footer button {
+    height: 25px;
+    width: 25px;
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+    margin: 2px;
+}
+
+
+.masvendido{
+    border-left: solid 1px black;
+    border-right: solid 1px black;
+    padding: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.nuevos{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 50%;
+    justify-content: space-between;
+    border-left: solid 1px black;
+    border-right: solid 1px black;
+    padding: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.nuevos h2{
+    width: 90%;
+}
+
+.nuevos article{
+    margin: 10px;
+    max-width: 50%;
+    min-width: 40%;
+    overflow: hidden;
+}
+
+.seleccionados{
+    border-left: solid 1px black;
+    border-right: solid 1px black;
+    padding: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* CSS DEL CARROUSEL */
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+.ca
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.slider {
+    position: relative;
+}
+
+.slides {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+}
+
+.slide {
+    width: 100vw;
+    flex-shrink: 0;
+    animation-name: slide;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.slide img {
+    vertical-align: top;
+    object-fit:contain;
+    height: 500px;
+    width: 100%;
+}
+
+.slide a {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+}
+
+.caption {
+    color: white;
+    text-shadow: 1px 1px black;
+    font-size: 8vw;
+    position: absolute;
+    bottom: 8vw;
+    right: 4vw;
+}
+
+.slide:target {
+    animation-name: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 50;
+}
+
+.slider-controler {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+}
+
+.slider-controler li {
+    margin: 0 0.5rem;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.slider-controler a {
+    display: inline-block;
+    vertical-align: top;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.listasventa {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 3px;
+    flex-wrap: wrap;
+}
+
+.listasventa section{
+    min-width: 60vw;
+}
+
+.listasventa article{
+    margin: 10px;
+}
+
+.listasventa article img {
+    width: 120px;
+    height: 120px;
+    object-fit: fit;
+}
+
+.estiloForm {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px 15px;
+    width: 100%;
+    text-align: center;
+    min-width: 65vw;
+}
+
+.estiloForm h3{
+    width: 70%;
+}
+
+.estiloForm1 {
+    margin-bottom: 15px;
+    min-width: 45%;
+}
+
+.estiloForm1 label {
+    margin-bottom: 5px;
+    font-style: italic;
+    display: block;
+    
+    
+}
+
+.login-crear{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.register-login{
+    margin: 10px;
+}
+
+.register-login button{
+    margin-top: 15px;
+}
+
+.register-login h2{ 
+    margin-top:20px;
+}
+
+.register-login ul{
+    margin: 20px;
+}
+
+.recuperarContraseña{
+    margin-top: 20px;
+    text-align:center;
+    list-style: none;
+}
+
+.recordarUsuario{
+    display: flex;
+    justify-content: end;
+}
+
+
+.estiloForm2{
+    width: 100%;
+    padding: 8px 8px;
+}
+
+.estiloForm3{
+    width: 70%;
+    padding: 8px 8px;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    
+}
+
+.botones-registro{
+    width: 90%;
+}
+
+.botonForm{
+    color:black;
+    font-size: 15px;
+    padding: 3px 6px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.botonForm:hover{
+    background-color: black;
+    color: white;
+    
+}
+
+
+.estiloForm4{
+    align-items: center;
+}
+
+
+/* CSS DEL CARROUSEL FIN */
+
+.formularioCompra{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.formularioCompra img{
+    object-fit: contain;
+   width: 350px;
+   height: 300px;
+}
+
+.cantidadesCarrito{
+    width: 50%;
+}
+
+
+.formularioCompra article{
+    display: flex;
+    margin: 25px 10px;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    border-top: solid 1px grey;
+    border-bottom: solid 1px grey;
+    padding: 20px;
+}
+
+.datosDisco{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    width: 50%;
+}
+
+.formularioCompra article button{
+    margin-right: 50px;
+    margin-top: 20px;
+    background-color: gainsboro;
+    color: black;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.finalCosto{
+    margin: 20px;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    align-items: center;
+}
+
+.botonCompra{
+    margin-right: 20px;
+    margin-left: 15px;
+    background-color: black;
+    color: white;
+    border: solid 1px black;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 2rem;
+}
+
+.headerCarro{
+    margin: 10px;
+}
+
+.headerCarro p{
+    margin-top: 20px; 
+}
+
+.detalle article{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 25px 10px;
+    justify-content: space-evenly;
+    align-items: center;
+ }
+
+ .detalle article img{
+    object-fit: contain;
+    width: 400px;
+    height: 400px;
+ }
+
+.detalle article p{
+    text-align: center;
+}
+
+ article h1{
+    margin: 10px 10px 10px;
+    text-align: center;
+    text-overflow: ellipsis;
+}
+.precio-artista-genero{
+    margin-bottom: 10px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.precio-artista-genero h3{
+    margin-right: 10px;
+}
+
+.botones-detalle{
+    display: flex;
+    justify-content:center ;
+}
+
+.botones-detalle button{
+    margin: 10px
+}
+
+.detalle article img{
+    object-fit: contain;
+    width: 400px;
+    height: 200px;
+ }
+
+ .info-producto{
+    min-width: 95vw;
+ }
+
+.botonAñadir{
+    padding: 5px;
+    margin-bottom: 10px;
+}
+.pregFrec{
+    text-align: center;
+}
+
+.pregFrec ul{
+    display: block;
+    text-align: center;
+    list-style: none;
+    margin: 0px 20% 0px 20%;
+    padding: 0px;
+    background-color: black;
+    border-radius: 10px;
+            
+}
+
+.pregFrec li {
+    padding: 5px;
+    border-bottom: 1px solid white;
+   
+}
+
+.mensajeError{
+    color: red;
+}
+
+@media (min-width: 550px){ 
+
+    .login-crear{
+        flex-wrap: nowrap;
+    }
+
+    .user-panel {
+        display:flex;
+        list-style: none;
+        align-items: center;
+    }
+
+
+    .top-header {
+        display: flex;
+        justify-content: space-around;
+
+    }
+    .logo{
+        padding: 30px;
+    }
+
+
+    input {
+        width: 45%;
+    }
+
+    header{
+        display:block
+    }
+
+    header .navegador {
+        display: block;
+    }
+
+    header button {
+        display: none;
+    }
+
+    .listasventa article img {
+        width: 200px;
+        height: 150px;
+        object-fit: contain;
+    }
+
+    .detalle article img{
+        object-fit: contain;
+        width: 500px;
+        height: 350px;
+     }
+     
+
+}
+
+@media (min-width: 769px){
+
+    .logo {
+        max-width: 300px;
+    }
+    
+    .listasventa section{
+        min-width: 0vw;
+    }
+
+    .caption {
+        font-size: 96px;
+        bottom: 96px;
+        right: 50px;
+    }
+    .detalle article img{
+        object-fit: contain;
+        width: 700px;
+        height: 500px;
+     }
+}
